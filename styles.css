@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.3rem;
+    background-color: whitesmoke;
+    height: 10vh;  
+}
+
+nav p {
+    font-size: 1.2rem;
+    color: rgb(49, 109, 165);
+    font-weight: bold;
+}
+
+nav .flipper-options a {
+    text-decoration: none;
+    margin: 0 .5rem;
+    color: rgb(29, 36, 44);
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+nav .flipper-options a:hover {
+    color: rgb(49, 109, 165)
+}
+
+main {
+    background-color: #f1f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+main section h3 {
+    font-size: 2.2rem;
+    background-color: rgb(20, 20, 20);
+    padding: 1rem;
+    color: rgb(212, 208, 208);
+    border-radius: 5px;
+    margin-bottom: 2.5rem;
+}
+
+#color-identity {
+    color: rgb(121, 56, 241);
+    text-transform: capitalize;
+}
+
+main section button {
+    background: none;
+    outline: none;
+    border: solid black 1.5px;
+    border-radius: 5px;
+    padding: .9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: .5s ease;
+    cursor: pointer;
+    margin: 5px;
+}
+
+main section button:hover {
+    background: rgb(14, 14, 13);
+    color: whitesmoke;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    main section h3 {
+        font-size: 1.2rem;
+        background-color: rgb(20, 20, 20);
+        padding: 1rem;
+    }
+
+    main section button {
+        border-radius: 5px;
+        padding: .9rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    nav p {
+        font-size: 1.2rem;
+        color: rgb(49, 109, 165);
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    
+  }
